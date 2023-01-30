@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+body{
+    background: rgb(247, 245, 245);
+}
+
+.clear{clear:both}
+
+
+/*HEADER DO MEU SITE*/
+header{
+    background-image: url('../assets/bg.jpg');
+    min-height: 600px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+
+        .logo{
+            position: relative;
+            z-index: 3;
+            background-image: url('../assets/logo.png');
+            background-size: 100% 100%;
+            float: left;
+            width: 132px;
+            height: 20px;
+        }
+
+        nav.desktop{
+            float: right;
+
+            ul{
+                list-style-type: none;
+            }
+
+            li{
+                display: inline-block;
+                margin: 0 15px;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .btn-nav{
+                padding: 3px 8px;
+                border: 1px solid white;
+                border-radius: 20px;
+            }
+
+            @media screen and (max-width: 1024px){
+                display: none;
+            
+            
+            }
+
+        }
+
+        nav.mobile{
+            display: none;
+            float: right;
+
+
+            h3{
+                position: relative;
+                z-index: 2;
+                color: white;
+                cursor: pointer;
+                font-size: 30px;
+            }
+
+            ul{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding: 70px 0 30px 0;
+                background: #31475e;
+                display: none;
+                text-align: center;
+            }
+
+            li{
+                padding: 10px 0;
+            }
+
+            li a{
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+
+            .btn-nav{
+                padding: 4px 10px;
+                display: inline-block;
+                padding: 3px 8px;
+                border: 1px solid white;
+                border-radius: 20px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: block;
+                
+            };
+   
+        }
+
+        .chamada-header{
+            padding: 110px 0;
+
+            h2{
+                font-size: 47px;
+                color: white;
+                font-weight: normal;
+            }
+
+            p{
+                font-size: 17px;
+                color: white;
+                margin-top: 10px;
+                max-width: 600px;
+            }
+            
+            @media screen and(max-width: 1024px) {
+                text-align: center;
+
+                p{
+                    display: inline-block;
+                }
+            }
+        
+        }
+
+        form{
+            margin-top: 10px;
+
+
+            input[type=email]{
+                display: inline-block;
+                border-radius: 20px;
+                background: white;
+                width: 237px;
+                height: 35px;
+                border: 0;
+                padding-left: 10px;
+                outline: 0;
+
+                
+            }
+
+            input[type=submit]{
+                width: 181px;
+                height: 43px;
+                border-radius: 100px;
+                background-color: #ff5f27;
+                color: white;
+                cursor: pointer;
+                border: 0;
+            }
+
+            @media screen and(max-width: 1024px) {
+                input[type=email]{
+                margin-bottom: 10px; 
+                } 
+            }
+        }
+}
+
+
+/**DESCRICAO DANKI***/
+
+section.descricao-danki{
+    text-align: center;
+    padding: 30px 0;
+
+
+    p{
+        font-weight: lighter;
+        font-size: 26px;
+        font-style: italic;
+        display: inline-block;
+        max-width: 680px;
+    }
+}
+
+
+
+
+
+/**DESCRICAO2****/
+
+section.descricao-danki2{
+    padding: 50px 0;
+
+
+    .container{
+        max-width: 960px;
+    }
+
+    .texto-descricao{
+        padding: 0 15px;
+        float: left;
+        width: 55%;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            display: block;
+            float: none;
+        }
+    }
+
+    h3{
+        color: #31475e;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: normal;
+    }
+
+    p{
+        color: #6a7c92;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 15px;
+    }
+
+    img{
+        width: 45%;
+        float: left;
+        max-width: 500px;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            float: none;
+            margin-top: 15px;
+        }
+    }    
+}
+
+/*** DESCRICAO 3****/
+
+
+section.descricao-danki3{
+    padding: 60px 0 60px 0;
+
+    .container{
+        max-width: 960px;
+        background-image: url(../assets/bg2.jpg);
+        background-size: cover;
+        min-height: 360px;
+        position: relative;
+    }
+
+    .box-depoimento{
+        position: absolute;
+        left: 40%;
+        bottom: -30px;
+        width: 60%;
+        max-width: 506px;
+        background: white;
+        padding: 10px 30px;
+        box-shadow:0 8px 20px 0 rgba(224, 224, 224, 0.5) ;
+
+        @media screen and (max-width: 1024px) {
+            top: 70%;
+            bottom: auto;
+            transform: translate(-40%,-40%); 
+        }
+    }
+
+    p{
+        font-size: 18px;
+        color: #31475e; 
+        font-weight: lighter;  
+    }
+
+}
+
+
+
+/***SERVICOS***/
+
+section.servicos{
+    padding: 25px 0;
+
+
+    .container{
+        max-width: 1100px;
+    }
+
+    .title-servicos{
+        text-align: center;
+            
+        h3{
+            color: #31475e;
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+
+    .flex-servicos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-servico{
+        border: 10px solid rgb(247, 245, 245);
+        background: white;
+        width: 33.3%;
+        background-color: #ffffff;
+        box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+        background: white;
+        border-radius: 8px;
+
+        img{
+            width: 100%;
+        }
+
+        @media screen and(max-width:768px) {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+    }
+
+    .box-servico-wraper{
+        padding: 20px;
+
+
+        h2{
+            color: #31475e;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        p{
+            font-weight: lighter;
+            color: #6a7c92;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        a{
+            display: inline-block;
+            border: 1px solid #6a7c92;
+            color: #6a7c92;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 10px;
+        }
+    }
+
+    
+}
+
+
+/****PORTFOLIO*****/
+
+
+section.portfolio{
+    padding: 20px 0;
+    background: white;
+
+    .container{
+        max-width: 960px;
+        background-color: #f7f7f7;
+        padding: 15px 0;
+    }
+
+    h2{
+        text-align: center;
+        font-weight: normal;
+        color: #31475e;
+    }
+
+    .empresas{
+        padding: 0 10px;
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+
+    .empresas-single{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        border-style: solid;
+        border-color: #ececec;
+        border-width: 1px 0 1px 1px;
+        padding: 10px 0;
+
+
+        @media screen and(max-width:768px) {
+            width: 100%;
+            max-width: 640px;
+            margin-bottom: 15px;
+            border: 1px solid #ececec;
+        }
+    }
+
+    .empresas-single:last-child{
+        border: 1px solid #ececec;
+    }
+
+
+}
+
+
+
+/***formulario****/  
+
+section.formulario{
+    padding: 30px 0;
+
+    .container{
+        max-width: 960px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 22px;
+        font-weight: normal;
+        color: #31475e;
+    }
+
+
+    form{
+        margin-top: 10px;
+
+
+        input[type=text], input[type=email], input[type=tel]{
+            width: 100%;
+            height: 40px;
+            border-radius: 100px;
+            border: 1px solid #ebebeb;
+            margin-top: 8px;
+            padding-left: 10px;
+            outline: none;
+        }
+
+        textarea{
+            width: 100%;
+            height: 120px;
+            resize: vertical;
+            border-radius: 20px;
+            border: 1px solid #ebebeb;
+            margin-top: 8px;
+            padding: 10px;
+            outline: none;
+        }
+
+        input[type=submit]{
+            width: 179px;
+            height: 58px;
+            border-radius: 100px;
+            background-color: #ff5f27;
+            box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+            color: white;
+            cursor: pointer;
+            border: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/**FOOTER**/
+
+
+footer{
+    padding: 50px 0;
+
+
+    .box-footer{
+        float: left;
+        width: 33.3%;
+        padding: 0 15px;
+
+        h2{
+            color: #31475e;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        p{
+            margin-top: 10px;
+            color: #6a7c92;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        form{
+            margin-top: 10px;
+
+            button{
+                width:calc(20% - 10px);
+                margin-left: 10px;
+                max-width: 63px;
+                height: 43px;
+                border: 1px solid #31475e;
+                border-radius: 50px;
+                background: white;
+                color: #31475e;
+            }
+
+            input[type=email]{
+                width: 80%;
+                padding-left: 10px;
+                max-width: 208px;
+                height: 43px;
+                border-radius: 100px;
+                background-color: #ffffff;
+                border: solid 1px #bfbfbf;
+                outline: none;
+            }
+        }
+
+        @media screen and(max-width:768px) {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
